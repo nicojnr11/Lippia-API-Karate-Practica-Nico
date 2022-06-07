@@ -1,0 +1,62 @@
+18:13:34.143 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @DeleteEntry
+18:13:34.757 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:13:34.763 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+18:13:35.434 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:13:35.709 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.clockify.me/api/v1/workspaces/628ceff638bc332cb91e6582/time-entries
+1 > X-Api-Key: ZWFhNDM1NzgtOTAxYy00NWE2LThjZDgtMmEzZjBiNmUxYzk4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 263
+1 > Host: api.clockify.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 > Accept-Encoding: gzip,deflate
+{"start":"2018-06-12T13:48:14.000Z","billable":"true","description":"Writing documentation Api Karate","projectId":"629fa4bb242893650e014b3c","taskId":"","end":"2018-06-12T13:50:14.000Z","tagIds":[""],"customFields":[{"customFieldId":"","value":"San Francisco"}]}
+
+18:13:36.985 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1274
+1 < 201
+1 < Date: Tue, 07 Jun 2022 21:13:03 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 375
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expected-Client-Version: 1.0.0
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Auth-Checksum: 5a1f1e54d4ee7f029d32ca2010bc34d1a2b2bccb5a349c1016eb3016cf0a4b9d
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+{"id":"629fbf5fbcf9da281c3c7783","description":"Writing documentation Api Karate","tagIds":[""],"userId":"628ceff538bc332cb91e6576","billable":true,"taskId":"","projectId":"629fa4bb242893650e014b3c","timeInterval":{"start":"2018-06-12T13:48:14Z","end":"2018-06-12T13:50:14Z","duration":"PT2M"},"workspaceId":"628ceff638bc332cb91e6582","isLocked":false,"customFieldValues":[]}
+
+18:13:36.993 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > DELETE https://api.clockify.me/api/v1/workspaces/628ceff638bc332cb91e6582/time-entries/629fbf5fbcf9da281c3c7783
+2 > X-Api-Key: ZWFhNDM1NzgtOTAxYy00NWE2LThjZDgtMmEzZjBiNmUxYzk4
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api.clockify.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+2 > Accept-Encoding: gzip,deflate
+
+
+18:13:38.094 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1101
+2 < 204
+2 < Date: Tue, 07 Jun 2022 21:13:04 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expected-Client-Version: 1.0.0
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < X-Auth-Checksum: 5a1f1e54d4ee7f029d32ca2010bc34d1a2b2bccb5a349c1016eb3016cf0a4b9d
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-Xss-Protection: 1; mode=block
+
+
+18:13:38.655 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:examples/users/DeleteTimeEntry.feature

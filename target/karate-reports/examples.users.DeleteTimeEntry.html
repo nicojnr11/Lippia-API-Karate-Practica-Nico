@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("2fa80324-df22-46bc-bcfc-d86b2e090e73",{name:"NicoPCGaming"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>examples.users.DeleteTimeEntry</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-07 06:13:38 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:18]"><span>[1.1:18]</span> <span>Eliminar hora registrada.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/DeleteTimeEntry.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Clockify - Academy - Lippia Karate</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Practica</a><a class="badge badge-primary" href="karate-tags.html">DeleteEntry</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:18]</span>
+                <span class="scenario-name">Eliminar hora registrada.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2636</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.clockify.me/api/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">18:13:35.436 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Api-Key = &#39;ZWFhNDM1NzgtOTAxYy00NWE2LThjZDgtMmEzZjBiNmUxYzk4&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseAddTimeEntry = call read(&#39;classpath:examples/users/AddTimeEntry.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1525</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.10.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.users.AddTimeEntry</div>
+      </div>
+      <div class="time-cell passed">1514</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.clockify.me/api/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Api-Key = &#39;ZWFhNDM1NzgtOTAxYy00NWE2LThjZDgtMmEzZjBiNmUxYzk4&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:examples/users/Requests/Add_Time_Entry_rq.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;workspaces&#39;,&#39;628ceff638bc332cb91e6582&#39;,&#39;time-entries&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1488</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10.0.call.1.13">18:13:35.710 request:
+1 &gt; POST https://api.clockify.me/api/v1/workspaces/628ceff638bc332cb91e6582/time-entries
+1 &gt; X-Api-Key: ZWFhNDM1NzgtOTAxYy00NWE2LThjZDgtMmEzZjBiNmUxYzk4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 263
+1 &gt; Host: api.clockify.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;start&quot;:&quot;2018-06-12T13:48:14.000Z&quot;,&quot;billable&quot;:&quot;true&quot;,&quot;description&quot;:&quot;Writing documentation Api Karate&quot;,&quot;projectId&quot;:&quot;629fa4bb242893650e014b3c&quot;,&quot;taskId&quot;:&quot;&quot;,&quot;end&quot;:&quot;2018-06-12T13:50:14.000Z&quot;,&quot;tagIds&quot;:[&quot;&quot;],&quot;customFields&quot;:[{&quot;customFieldId&quot;:&quot;&quot;,&quot;value&quot;:&quot;San Francisco&quot;}]}
+
+18:13:36.985 response time in milliseconds: 1274
+1 &lt; 201
+1 &lt; Date: Tue, 07 Jun 2022 21:13:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 375
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Expected-Client-Version: 1.0.0
+1 &lt; Expires: 0
+1 &lt; Pragma: no-cache
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Auth-Checksum: 5a1f1e54d4ee7f029d32ca2010bc34d1a2b2bccb5a349c1016eb3016cf0a4b9d
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;id&quot;:&quot;629fbf5fbcf9da281c3c7783&quot;,&quot;description&quot;:&quot;Writing documentation Api Karate&quot;,&quot;tagIds&quot;:[&quot;&quot;],&quot;userId&quot;:&quot;628ceff538bc332cb91e6576&quot;,&quot;billable&quot;:true,&quot;taskId&quot;:&quot;&quot;,&quot;projectId&quot;:&quot;629fa4bb242893650e014b3c&quot;,&quot;timeInterval&quot;:{&quot;start&quot;:&quot;2018-06-12T13:48:14Z&quot;,&quot;end&quot;:&quot;2018-06-12T13:50:14Z&quot;,&quot;duration&quot;:&quot;PT2M&quot;},&quot;workspaceId&quot;:&quot;628ceff638bc332cb91e6582&quot;,&quot;isLocked&quot;:false,&quot;customFieldValues&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.10.0.call">
+    <div class="step-container" id="1.10.0.call.1.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def idTimeEntry = responseAddTimeEntry.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;workspaces&#39;, &#39;628ceff638bc332cb91e6582&#39; , &#39;time-entries&#39; , idTimeEntry</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1105</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">18:13:36.993 request:
+2 &gt; DELETE https://api.clockify.me/api/v1/workspaces/628ceff638bc332cb91e6582/time-entries/629fbf5fbcf9da281c3c7783
+2 &gt; X-Api-Key: ZWFhNDM1NzgtOTAxYy00NWE2LThjZDgtMmEzZjBiNmUxYzk4
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: api.clockify.me
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:38.095 response time in milliseconds: 1101
+2 &lt; 204
+2 &lt; Date: Tue, 07 Jun 2022 21:13:04 GMT
+2 &lt; Connection: keep-alive
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Expected-Client-Version: 1.0.0
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Auth-Checksum: 5a1f1e54d4ee7f029d32ca2010bc34d1a2b2bccb5a349c1016eb3016cf0a4b9d
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-Xss-Protection: 1; mode=block
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
